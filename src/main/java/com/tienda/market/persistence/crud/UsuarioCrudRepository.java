@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UsuarioCrudRepository extends CrudRepository<Usuario, Integer> {
 
-    @Query(value="select * from clientes where correo_electronico= ? and password= ? ", nativeQuery = true)
+    @Query(value="select * from usuarios where email= ? and password= ? ", nativeQuery = true)
     Usuario findByUserPassword(String correo, String password);
 
 }
