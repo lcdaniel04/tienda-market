@@ -20,9 +20,9 @@ jobs:
         java-version: '11'
         distribution: 'corretto'
     - name: Validate Gradle wrapper
-      uses: gradle/wrapper-validation-action@v2
+      uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v2    
+      uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee    
     - name: Deploy to Heroku
       uses: AkhileshNS/heroku-deploy@v3.12.12
       with:
