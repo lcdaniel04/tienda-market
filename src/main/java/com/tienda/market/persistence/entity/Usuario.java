@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "clientes")
-public class Cliente {
+@Table(name = "usuarios")
+public class Usuario {
     @Id
     private String id;// cc usuario o cliente
     private String nombre;
@@ -15,11 +15,11 @@ public class Cliente {
     @Column(name="password")
     private String password;
 
-    @Column(name="correo_electronico")
+    @Column(name="email")
     private String email;
 
     //private String password;
-    @OneToMany(mappedBy = "cliente")
+    @OneToMany(mappedBy = "usuario")
     private List<Compra> compras;
 
     public String getId() {

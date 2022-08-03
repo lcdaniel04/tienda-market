@@ -4,8 +4,6 @@ package com.tienda.market.persistence;
 import com.tienda.market.domain.Category;
 import com.tienda.market.domain.repository.CategoryRepository;
 import com.tienda.market.persistence.crud.CategoriaCrudRepository;
-import com.tienda.market.persistence.entity.Categoria;
-import com.tienda.market.persistence.entity.Cliente;
 import com.tienda.market.persistence.mapper.CategoryMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
