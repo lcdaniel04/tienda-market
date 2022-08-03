@@ -11,6 +11,8 @@ public class Producto {
     @Column(name = "id_producto")
     private Integer idProducto;
 
+    private Integer cantidad;
+
     private String nombre;
 
     @Column(name = "id_categoria")
@@ -93,5 +95,13 @@ public class Producto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public Integer getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(Integer cantidad) {
+        this.cantidad = cantidad;
     }
 }
