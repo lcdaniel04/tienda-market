@@ -12,7 +12,7 @@ public class Compra {
     @Column(name = "id_compra")
     private Integer idCompra;
 
-    @Column(name = "id_cliente")
+    @Column(name = "id_usuario")
     private String idCliente;
 
     private LocalDateTime fecha;
@@ -25,7 +25,7 @@ public class Compra {
     private String estado;
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
+    @JoinColumn(name = "id_usuario", insertable = false, updatable = false)
     private Usuario usuario;
 
     @OneToMany(mappedBy = "compra", cascade = {CascadeType.ALL})
