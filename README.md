@@ -19,14 +19,14 @@ _______________________
 
 2) Crear la base datos tienda-market en postgresql y ejecutar los siguientes Scripts: 1_DDL_Tienda.sql y 2_DatosBD_Tienda.sql
 
-6) Abrir el proyecto desde el IDE IntelliJ IDEA y realizar configuración del archivo appication-dev.properties:
+3) Abrir el proyecto desde el IDE IntelliJ IDEA y realizar configuración del archivo appication-dev.properties:
 
-  server.port=8090
-  spring.datasource.url=jdbc:postgresql://localhost:5433/tienda-market
-  spring.datasource.username=postgres
-  spring.datasource.password=dlc12345
+    server.port=8090
+    spring.datasource.url=jdbc:postgresql://localhost:5433/tienda-market
+    spring.datasource.username=postgres
+    spring.datasource.password=dlc12345
 
-Notas: 
+    Notas: 
       1- El puerto de configuración del servidor de aplicacióon es el 8090, pero se puede usar el 8080.
       2- El puerto de configuración para la base datos puede ser 5432 o 5433. 
       3- La base datos en este caso tiene el nombre de tienda-market. Si prefiere otro, se puede cambiar.
@@ -35,9 +35,10 @@ Notas:
 
 4) Quitar build.gradle: targetCompatibility = JavaVersion.VERSION_11 ( Se usa para la la compativilidad con Heroku, debido a que Heroku por defecto compila con la        versión Java 1.8.).
 
-6) Ejecutar proyecto (Run -> TiendaMarketApplication). Si el servidor de aplicación subio sin inconvenientes, podemos probar desde el navegador o por Postman uno de      los servicios de la API:
+5) Ejecutar proyecto (Run -> TiendaMarketApplication). Si el servidor de aplicación subio sin inconvenientes, podemos probar desde el navegador o por Postman uno de      los servicios de la API:
 
    Por ejemplo: http://localhost:8090/tienda-market/api/product/all
 _______________________
 
+Cualquier comentario sobre el proyecto escribir al E-mail: lcdaneilf4@gmail.com
 
